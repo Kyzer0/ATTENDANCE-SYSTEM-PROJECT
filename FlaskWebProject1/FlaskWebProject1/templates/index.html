@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="wrap-up">
+        <div class="header">
+            <div class="seperator"></div>
+            <div class="logo">
+            </div>
+            <div class="authentication">
+                <div class="form">
+                    <i class="fa-solid fa-user"></i>
+                    <button type="button" id="login-btn" onclick="window.location.href='{{ 'teachersLogin' }}'">Login</button>
+
+                </div>
+            </div>
+        </div>
+        <form>
+            <div class="input-tab">
+                <label>Full Name</label>
+                <input id="student-name" type="text">
+            </div>
+
+            <div class="input-tab">
+                <label>Student ID</label>
+                <input id="student-id" type="text">
+            </div>
+
+            <div class="input-tab">
+                <label>Section</label>
+                <input id="student-section" type="text">
+            </div>
+            <div class="btn">
+                <button id="clear-btn">Clear All</button>
+                <button>Submit</button>
+            </div>
+        </form>
+        {% endblock %}
