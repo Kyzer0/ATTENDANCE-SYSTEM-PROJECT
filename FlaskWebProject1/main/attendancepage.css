@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+.container .side-bar{
+    width: 250px;
+    height: 7=590px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.5);
+    background: white;
+    border-radius: 7px;
+    position: relative;
+}
+
+.container .side-bar .links{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.side-bar .links .save-files{
+    background: white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+    padding: 5px 13px;
+}
+
+.side-bar .logout-btn{
+    list-style: none;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.side-bar .section-choices{
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.5);
+    position: absolute;
+    top: 80px;
+    left: 220px;
+    display: none;
+}
+
+.side-bar .hide{
+    display: block;
+}
+
+.container .table-container{
+    width: 100%;
+}
+
+.table-container table{
+    width: 100%;
+}
+
+.table-container table td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+
+

@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='/static/content/attendancePage.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="side-bar">
+        <ul class="links">
+            <li><a href="#">
+                Set Attendance
+            </a></li>
+            <li><a href="#">Current Section</a></li>
+            <li><a id="class-section" href="#">Class Section</a></li>
+            <li><a class="save-files" href="#">Save FIles</a></li>
+        </ul>
+
+        <div class="logout-btn">
+            <li><a href="#">
+                <i>Log out</i>
+            </a></li>
+        </div>
+
+        <div id="choices" class="section-choices">
+            <li>A016</li>
+            <li>A016</li>
+            <li>A016</li>
+            <li>A01</li>
+        </div>
+    </div>
+
+
+    <div class="table-container">
+        <table>
+            <caption>
+                <h1  style="background: yellow;">A016</h1>
+            </caption>
+            <tr>
+                <th>Student Name</th>
+                <th>Student ID</th>
+                <th>Section</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td>Henry</td>
+                <td>123123213</td>
+                <td>A016</td>
+                <td>10/12/2024</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}
