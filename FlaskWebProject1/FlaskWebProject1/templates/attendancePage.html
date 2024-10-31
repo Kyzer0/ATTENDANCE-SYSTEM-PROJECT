@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='/static/content/attendancePage.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div id="content">
+    <button type="button" id="login-btn" onclick="window.location.href='{{ 'sectionAdding' }}'">Login</button>
+</div>
+
+
+
+
+{% endblock %}

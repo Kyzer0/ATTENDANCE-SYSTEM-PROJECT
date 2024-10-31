@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <form>
+        <div class="icon">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <form action="get">
+            <div class="input-tab">
+                <label>Teachers ID</label>
+                <input type="text">
+            </div>
+            <div class="input-tab">
+                <label>Password</label>
+                <input type="password">
+            </div>
+        </form>
+
+        <div class="btn">
+            <button type="button" id="login-btn" onclick="window.location.href='{{ 'attendancePage' }}'">Login</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
