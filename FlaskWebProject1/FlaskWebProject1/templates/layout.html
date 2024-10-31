@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - My Flask Application</title>
+    <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/css/bootstrap.min.css  />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css">
+
+    <script src="/static/scripts/JSBundle/modernizr-2.6.2.js"></script>
+
+    <title>Front Page</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="wrap-up">
+
+            <div class="header">
+                <div class="logo">
+                    <img src="../static/img/icct logop.png" >
+                </div>
+                <div>
+                   
+                   
+                </div>
+                <div class="authentication">
+                    <i class='bx bxs-user'></i>
+                </div>
+            </div>
+            <div class="title">  
+            </div>
+
+            <form>
+                <div class="input-tab">
+                    <input id="full-name" type="text" placeholder="Enter your fullname">
+                    <div id="name-error" class="error-tab"></div>
+                </div>
+                <div class="input-tab">
+                    <input id="student-id" type="text" placeholder="Enter your Student Id">
+                    <div id="studentid-error" class="error-tab"></div>
+                </div>
+                <div class="input-tab">
+                   <input id="section" type="text" placeholder="Enter your section">
+                   <div id="section-error" class="error-tab"></div>
+                </div>
+                <div class="input-tab">
+                    <input id="email" type="text" placeholder="Enter your email">
+                    <div id="email-error" class="error-tab"></div>
+                </div>
+                <div class="btn-form">
+                    <input id="submit-btn" type="submit" value="Submit">
+                    <div id="submit-error" class="error-tab"></div>
+                </div>
+            </form>
+
+            <div class="pop-up">
+                <h2>Thank you</h2>
+                <p>Validation success</p>
+                <button class="ok-btn" id="okBtn" type="button">OK</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div class="container body-content">
+        {% block content %}{% endblock %}
+        <hr />
+        <footer>
+            <p>&copy; {{ year }} - My Flask Application</p>
+        </footer>
+    </div>
+
+    <script src="/static/scripts/attendancePage.js"></script>
+    <script src="/static/scripts/HomePage.js"></script>
+    <script src="/static/scripts/JSBUNDLE/jquery-1.10.2.js"></script>
+    <script src="/static/scripts/JSBUNDLE/respond.js"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>
